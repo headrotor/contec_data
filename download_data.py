@@ -67,7 +67,8 @@ if __name__ == '__main__':
         print("sorry, requires Python 3.")
         exit(1)
 
-    parser = argparse.ArgumentParser(description='Download recorded data from ContecCMS50D+ pulse oximeter.')
+    parser = argparse.ArgumentParser(
+        description='Download recorded data from ContecCMS50D+ pulse oximeter.' + "Device must be turned on and connected (insert finger)")
     parser.add_argument('--port', '-p', nargs='?',
                         default="/dev/ttyUSB0",
                         help='Serial port name, e.g. COM3, /dev/ttyUSB0')
