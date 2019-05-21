@@ -12,7 +12,8 @@ NO WARRANTY EXPRESS OR IMPLIED. UNDOCUMENTED SERIAL INTERFACE: USE AT OWN RISK
 
 `download_data.py` usage: with contec plugged in and powered on (you may need to insert finger) `python3 download_data.py  contec_data.csv` downloads all data stored in device to output in csv format with a one-line header. 
 
-`positional arguments:
+~~~~
+positional arguments:
   output_file           Output data CSV file
 
 optional arguments:
@@ -23,6 +24,6 @@ optional arguments:
   --raw_dec, -r         Print raw data as decimal bytes to .raw file
   --debug, -d           write raw data with cooked data in csv output
   --quiet, -q           Do not print progress and info to stderr
-`
+~~~~
 
 `stream_data.py` usage: with contec plugged in and powered on with finger inserted, streams heart rate, spO2 values, and instantaneous pulse value to stdout. Edit file to select serial port 
